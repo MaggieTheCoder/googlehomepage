@@ -1,16 +1,90 @@
+.aboutstore {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    line-height: 24px;
+    vertical-align: middle;
+   float:left;
+}
+ 
+ .linkstoright {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    line-height: 24px;
+    vertical-align: middle;
+    float: right;
+   }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li a {
+    color:black
+    
+}
+
+
 #logo {
    position: fixed;
   top: 30%;
   left: 50%;
   margin-top: -50px;
-  margin-left: -100px;
+  margin-left: -150px;
+  height: 92px;
+width: 272px;
 
 }
 
-#input {
-    position: absolute;
-    appearance: auto;
+#searchbar {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 300px;
+        height: 100px;
+        margin-top: -50px; /* Half of total height */
+        margin-left: -150px; /* Half of total width */
+        appearance: auto;
     box-sizing: border-box;
+    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
     padding: 1px 2px;
-
+    height: 44px;
+    font-size: 16px;
+    
 }
+
+.searchbar {
+    height: 100px;
+    width: 337px;
+    border-radius: 25px;
+    border: 0.5px solid black;
+    -webkit-appearance: searchbar;
+    
+}
+
+.searchbuttons{
+    display: block;
+    text-align: center;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+
+   
+
+

@@ -6,12 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google Homepage</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body style="background-color:rgb(255, 255, 255);">
 
-    <div class="center" id="logo"><img src="images/googlelogo.png" alt="Google"> </div> 
+    <div class="aboutstore"><ul><li style="float:left"><a href="https://about.google/?fg=1&utm_source=google-GB&utm_medium=referral&utm_campaign=hp-header">About</a></li></ul>
+    <ul><li style="float:left"><a href="https://store.google.com/GB?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-GB">Store</a></li></ul></div>
 
-    <div><input id="input" type="search" placeholder="Search Google or type URL"></div>
-   
+    <div class="linkstoright"><ul><li><a href="https://accounts.google.com/servicelogin"><span class="material-icons">account_circle</span></a></li></ul>
+    <ul><li><a href="https://images.google.com">Images</a></li></ul>
+    <ul><li><a  href="https://mail.google.com/">Gmail</a></li></ul></div>
+    
+    <div id="logo"><img src="images/googlelogo.png" alt="Google"> </div> 
+
+   <div><input class="searchbar" id="searchbar" type="search" placeholder="Search Google or type URL" results 
+        alt="Search Google or type URL"></div>
+        
+        <div class="searchbuttons"><button id="googlesearchb" type="submit">Google Search</button>
+            <button id="ImfeelingLucky" type="submit">I'm Feeling Lucky</button>
+        </div>
+        
+
 </body>
 </html>
