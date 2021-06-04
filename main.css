@@ -1,20 +1,33 @@
-.aboutstore {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    line-height: 24px;
-    vertical-align: middle;
-   float:left;
+body, input, button {
+    font-size: 14px;
+    font-family: arial,sans-serif;
+    color: #222;
 }
- 
- .linkstoright {
+
+.topnatopnavbarleft {
     display: flex;
-    flex-direction: column;
-    height: 100%;
-    line-height: 24px;
-    vertical-align: middle;
-    float: right;
-   }
+    align-items: center;
+    padding: 6px;
+    flex-direction: row;
+    align-content: center;
+    justify-content: normal;
+}
+.topnavbarright {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.material-icons {
+    height: 32px;
+    width: 32px;
+}
+
+.grid{
+    height:23px;
+    position:relative;
+    bottom:4px;
+}
 
 ul {
     list-style-type: none;
@@ -23,7 +36,10 @@ ul {
 }
 
 li a {
-    color:black
+    color:#222;
+    display: inline-block;
+    padding: 5px;
+    margin: 0 5px;
     
 }
 
@@ -62,16 +78,20 @@ width: 272px;
     border-radius: 25px;
     border: 0.5px solid black;
     -webkit-appearance: searchbar;
+    border:none;
     
 }
 
-.searchbuttons{
+.searchbar:focus-within{
+    box-shadow: 1px 1px 8px 1px #dcdcdc;
+    outline:none;}
+
+.searchbuttons {
     display: block;
     text-align: center;
     background-color: #f8f9fa;
     border: 1px solid #f8f9fa;
     border-radius: 4px;
-    color: #3c4043;
     font-family: arial,sans-serif;
     font-size: 14px;
     margin: 11px 4px;
@@ -80,7 +100,18 @@ width: 272px;
     height: 36px;
     min-width: 54px;
     cursor: pointer;
-    user-select: none;
+    user-select: none;}
+
+.button {
+    position: absolute;
+    top: 50%;
+
+}
+
+.buttonleft {
+    position: fixed;
+    top: 50%;
+    left: 40%;
 }
 
 
